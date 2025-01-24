@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class ThymeleafWebController {
 
-    @GetMapping("/pfad/{radius}")
-    public String methode( @PathVariable double radius,
-                           Model model ) {
+	
+    @GetMapping( "/pfad/{radius}" )
+    public String berechnen( @PathVariable double radius,
+                             Model model ) {
 
     	final double umfang = 2 * radius * Math.PI;
 
